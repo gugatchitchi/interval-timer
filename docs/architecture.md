@@ -22,9 +22,9 @@ src/
 
 ## Tooling (recommended)
 - **TypeScript + Vite** for building; **Svelte** for the UI (small, little boilerplate).
-- **Vitest** unit tests for `core/`; **Playwright (WebKit, iPhone viewport)** smoke tests for the main flows.
+- **Vitest** unit tests for `core/` and backup parsing. Browser smoke tests are run by hand for now.
 - **SortableJS** for drag and drop.
-- **PWA**: web manifest + service worker so it opens offline from the Home Screen and has an app icon.
+- **PWA**: web manifest + a small hand-written service worker (`public/sw.js`) so it opens offline from the Home Screen and has an app icon. Fonts are bundled (no Google Fonts at runtime).
 
 ## Hosting and updates
 - GitHub repo -> GitHub Actions runs tests and deploys to **GitHub Pages** on every merge to main.
